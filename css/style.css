@@ -1,0 +1,56 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-duration: 4s;
+    animation-name: example;
+    margin-left: 50px;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes example {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: brown;
+    }
+}
+
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin: 20px 150px;
+    /* animation-name: sample;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+     */
+    animation: sample 3s infinite alternate;
+}
+
+@keyframes sample {
+    0% {
+        background-color: green;
+    }
+
+    25% {
+        background-color: aqua;
+        border-radius: 20px;
+    }
+
+    50% {
+        background-color: yellow;
+        border-radius: 30px;
+    }
+
+    100% {
+        background-color: red;
+        border-radius: 50px;
+    }
+}
